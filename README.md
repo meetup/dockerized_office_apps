@@ -1,4 +1,5 @@
 # dockerized_office_apps
+<<<<<<< HEAD
 
 ## to restart mediawiki (https://wiki.muphq.com/)
 ```
@@ -7,3 +8,6 @@ Note we are bind-mounting the volume (mediawiki-1.10.0_src) so as to have static
 docker run --name mediawiki -itd -p 192.168.0.15:8080:8080 -v /usr/local/docker_apps/mediawiki/mediawiki-1.10.0_src:/var/www/localhost/htdocs registry.dev.meetup.com/library/mediawiki-1.10.0 && docker exec mediawiki /usr/sbin/apache2 -D USERDIR -D DEFAULT_VHOST -D INFO -D STATUS -D LANGUAGE -D DAV -D PHP5 -D PERL -D STATUS -D PROXY -d /usr/lib64/apache2 -f /etc/apache2/httpd.conf -k start
 
 ```
+=======
+Home of Dockerifles plus supporting artifacts for building docker images for some of our office apps.
+>>>>>>> 4fb89c08a56d22eeeb22699edf4dfbc21816f8a9
